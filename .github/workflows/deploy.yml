@@ -9,6 +9,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write    # Required to push to the gh-pages branch
+      pull-requests: write # Required for your PR comment script to work
     
     strategy:
       fail-fast: false
