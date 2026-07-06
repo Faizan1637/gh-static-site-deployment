@@ -1,7 +1,12 @@
 self.__BUILD_MANIFEST = {
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/gh-static-site-deployment//_next/:path+",
+        "destination": "/gh-static-site-deployment/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
