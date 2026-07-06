@@ -1,10 +1,10 @@
 1:"$Sreact.fragment"
-2:I[85161,["/gh-static-site-deployment/_next/static/chunks/0jdah9p5of~i~.js","/gh-static-site-deployment/_next/static/chunks/141rdh-xgx6bu.js"],"Hero"]
-3:I[80976,["/gh-static-site-deployment/_next/static/chunks/0jdah9p5of~i~.js","/gh-static-site-deployment/_next/static/chunks/141rdh-xgx6bu.js"],"Projects"]
-4:I[14255,["/gh-static-site-deployment/_next/static/chunks/0jdah9p5of~i~.js","/gh-static-site-deployment/_next/static/chunks/141rdh-xgx6bu.js"],"Skills"]
-5:I[15751,["/gh-static-site-deployment/_next/static/chunks/0jdah9p5of~i~.js","/gh-static-site-deployment/_next/static/chunks/141rdh-xgx6bu.js"],"Contact"]
-6:I[76841,["/gh-static-site-deployment/_next/static/chunks/0jdah9p5of~i~.js","/gh-static-site-deployment/_next/static/chunks/141rdh-xgx6bu.js"],"Footer"]
-7:I[76779,["/gh-static-site-deployment/_next/static/chunks/0jdah9p5of~i~.js"],"OutletBoundary"]
+2:I[4193,["546","static/chunks/546-927dc37b6858f7cd.js","974","static/chunks/app/page-61bf59155f11ce75.js"],"Hero"]
+3:I[9539,["546","static/chunks/546-927dc37b6858f7cd.js","974","static/chunks/app/page-61bf59155f11ce75.js"],"Projects"]
+4:I[5139,["546","static/chunks/546-927dc37b6858f7cd.js","974","static/chunks/app/page-61bf59155f11ce75.js"],"Skills"]
+5:I[855,["546","static/chunks/546-927dc37b6858f7cd.js","974","static/chunks/app/page-61bf59155f11ce75.js"],"Contact"]
+6:I[4376,["546","static/chunks/546-927dc37b6858f7cd.js","974","static/chunks/app/page-61bf59155f11ce75.js"],"Footer"]
+7:I[4626,[],"OutletBoundary"]
 8:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"bg-background","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}]]}],[["$","script","script-0",{"src":"/gh-static-site-deployment/_next/static/chunks/141rdh-xgx6bu.js","async":true}]],["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"odv4XRKrTARP1c54wbW6c"}
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"bg-background","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}]]}],null,["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zCc31Eddnmeo-SC_hBhLO"}
 9:null
