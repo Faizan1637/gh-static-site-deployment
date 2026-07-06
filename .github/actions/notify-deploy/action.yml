@@ -1,0 +1,16 @@
+name: 'Notify Deployment'
+description: 'Custom JavaScript action to notify about deployment status'
+
+inputs:
+  status:
+    description: 'Deployment status (success/failure)'
+    required: true
+  
+  deployment-url:
+    description: 'URL of deployed portfolio'
+    required: false
+    default: 'https://example.com'
+
+runs:
+  using: 'node20'
+  main: 'action.js'

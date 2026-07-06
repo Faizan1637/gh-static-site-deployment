@@ -1,0 +1,63 @@
+name: 'Deploy Static Portfolio'
+description: 'Custom action to build and deploy your static portfolio'
+
+inputs:
+  node-version:
+    description: 'Node.js version to use'
+    required: false
+    default: '20.x'
+  
+  build-command:
+    description: 'Build command to run'
+    required: false
+    default: 'pnpm run build'
+  
+  output-directory:
+    description: 'Output directory from build'
+    required: false
+    default: 'out'
+
+outputs:
+  build-status:
+    description: 'Build status (success/failure)'
+    value: ${{ steps.build.outputs.status }}
+  
+  artifact-path:
+    description: 'Path to build artifacts'
+    value: ${{ steps.build.outputs.artifact-path }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: 'pnpm'
+    
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 10
+    
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+      shell: bash
+    
+    - name: Build portfolio
+      id: build
+      run: |
+        ${{ inputs.build-command }}
+        echo "status=success" >> $GITHUB_OUTPUT
+        echo "artifact-path=${{ inputs.output-directory }}" >> $GITHUB_OUTPUT
+      shell: bash
+    
+    - name: Generate build summary
+      run: |
+        echo "## Build Summary" >> $GITHUB_STEP_SUMMARY
+        echo "✅ Portfolio built successfully" >> $GITHUB_STEP_SUMMARY
+        echo "📦 Output directory: ${{ inputs.output-directory }}" >> $GITHUB_STEP_SUMMARY
+      shell: bash
